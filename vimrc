@@ -16,8 +16,13 @@ set showcmd
 set showmode
 set showmatch
 set hlsearch
-
 set history=1000
+" }}}
+
+" Fold {{{
+set foldmethod=indent
+autocmd FileType vim setlocal foldmethod=marker
+set foldlevel=2 " fold only in deeper blocks
 " }}}
 
 " Wildmenu {{{
@@ -33,7 +38,6 @@ set statusline+=%=
 set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 set laststatus=2
 " }}}
-
 
 " Plugin {{{
 call plug#begin('~/.vim/plugged')
