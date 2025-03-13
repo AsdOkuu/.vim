@@ -56,6 +56,8 @@ Plug 'dense-analysis/ale'
 " Language packs
 Plug 'sheerun/vim-polyglot'
 
+Plug 'jiangmiao/auto-pairs'
+
 " Color scheme 'everforest' (The best vim color scheme!)
 Plug 'sainnhe/everforest'
 
@@ -97,3 +99,4 @@ let g:ale_linters = {
 let g:ale_lint_on_text_changed='always'
 " }}}
 
+let g:AutoPairsFlyMode = 1
