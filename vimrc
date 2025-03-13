@@ -17,6 +17,11 @@ set showmode
 set showmatch
 set hlsearch
 set history=1000
+set splitbelow
+
+set listchars=tab:>>,lead:.,trail:.
+set list
+
 " }}}
 
 " Fold {{{
@@ -28,7 +33,7 @@ set foldlevel=2 " fold only in deeper blocks
 " Wildmenu {{{
 set wildmenu
 set wildmode=list:longest
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*.swp
 " }}}
 
 " Statusline {{{
@@ -72,6 +77,7 @@ let NERDTreeAutoCenter=1
 let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
 let NERDTreeHighlightCursorline=0
+let NERDTreeRespectWildIgnore=1 " Using wild ignore
 
 " Open NERDTree when open a file using 'vim'
 autocmd VimEnter * NERDTree | wincmd p
