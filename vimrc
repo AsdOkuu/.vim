@@ -93,10 +93,7 @@ autocmd BufWinEnter * if &buftype != 'quickfix' && getcmdwintype() == '' | silen
 " }}}
 
 " Ale {{{
-let g:ale_linters = {
-	\ 'python': ['pylint'],
-	\ }
-let g:ale_lint_on_text_changed='always'
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
 " }}}
 
-let g:AutoPairsFlyMode = 1
